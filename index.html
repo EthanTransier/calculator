@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Calculator</h1>
+
     <div class="calculatorContainer">
+    <div class="equationContainer" id="equationContainerID">
+
+    </div>
     <div class="numberButtonsContainer">
         <button class="numberButton" onclick="findNumber(1)">1</button>
         <button class="numberButton" onclick="findNumber(2)">2</button>
@@ -21,19 +24,15 @@
         <button class="numberButton" onclick="findNumber(8)">8</button>
         <button class="numberButton" onclick="findNumber(9)">9</button>
         <button class="numberButton" onclick="findNumber(0)">0</button>
-    </div>
-    <div class="signButtonsContainer">
         <button class="signButton" onclick="findNumber('+')">+</button>
         <button class="signButton" onclick="findNumber('-')">-</button>
         <button class="signButton" onclick="findNumber('*')">x</button>
         <button class="signButton" onclick="findNumber('/')">/</button>
         <button class="signButton" onclick="findNumber('**')">^</button>
         <button class="signButton" onclick="calculateEquation()">=</button>
-        <button class="signButton" onclick="resetEquation()">Reset</button>
+        <button class="signButton resetButton" onclick="resetEquation()">Reset</button>
     </div>
-    <div class="equationContainer" id="equationContainerID">
-
-    </div>
+    
     </div>
     
     <script src="./index.js"></script>
